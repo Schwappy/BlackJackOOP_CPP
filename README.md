@@ -59,7 +59,8 @@ Tests: **********************************
 to be added
 
 Contributors: **********************************
-Just me! Paul S
-chwappach
+Just me! Paul Schwappach
+
+
 License: **********************************
 to be added
