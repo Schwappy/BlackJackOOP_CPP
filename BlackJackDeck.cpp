@@ -1,15 +1,15 @@
 //* * * * * * * * * * * * * * * * * * * * * * * //
-//  Author:		Paul Schwappach					//
-//	Professor:	George Sfakianakis				//
-//	Class:		CSIS 297 - Intermediate C++		//
-//	Assignment:	Semester Project				//
-//	Date:		02/20/2016						//
+//  Author:	Paul Schwappach			//
+// Professor:	George Sfakianakis		//
+// Class:	CSIS 297 - Intermediate C++	//
+// Assignment:	Semester Project		//
+// Date:	02/20/2016			//
 //* * * * * * * * * * * * * * * * * * * * * * * //
 
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *	//
-//	About Deck class:											//
-//		This class makes an amount of decks (52 Card objects)	//
-//	a user needs.  The deck shuffles, deals cards...			//
+// About Deck class:						//
+// This class makes an amount of decks (52 Card objects)	//
+// a user needs.  The deck shuffles, deals cards...		//
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *	//
 
 // included header files
@@ -17,7 +17,7 @@
 #include "BlackJackDeck.h"
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// No-argument Constructor						*
+// No-argument Constructor			*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 BlackJackDeck::BlackJackDeck()
 {
@@ -27,7 +27,7 @@ BlackJackDeck::BlackJackDeck()
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// Argument accepting Constructor				*
+// Argument accepting Constructor		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 BlackJackDeck::BlackJackDeck(int numberDecks)
 {
@@ -75,7 +75,7 @@ void BlackJackDeck::shuffle()
 
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// dealCard() removes a card from the deck		*
+// dealCard() removes a card from the deck	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 Card BlackJackDeck::dealCard()
 {
@@ -113,7 +113,7 @@ void BlackJackDeck::resetDeck()
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
 // deckState returns the current deck's card	*
-// states left inside the deck vector			*
+// states left inside the deck vector		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 std::string BlackJackDeck::deckState() const
 {
@@ -137,7 +137,7 @@ std::string BlackJackDeck::deckState() const
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
 // cLastCardDealt returns the last card	that	*
-// was dealt from the deck						*
+// was dealt from the deck			*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 
 std::string BlackJackDeck::cLastCardDealt() const
