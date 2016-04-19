@@ -1,23 +1,23 @@
 //* * * * * * * * * * * * * * * * * * * * * * * //
-//  Author:		Paul Schwappach					//
-//	Professor:	George Sfakianakis				//
-//	Class:		CSIS 297 - Intermediate C++		//
-//	Assignment:	Semester Project				//
-//	Date:		02/08/2016						//
+// Author:	Paul Schwappach			//
+// Professor:	George Sfakianakis		//
+// Class:	CSIS 297 - Intermediate C++	//
+// Assignment:	Semester Project		//
+// Date:	02/08/2016			//
 //* * * * * * * * * * * * * * * * * * * * * * * //
 
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *	//
-//  About Card class:											//
-//		The card class allows the creation of a single card		//
-//	that can be then used by it's subclasses.  A Deck class,	//
-//	for example, is a collection of cards that can be shuffled	//
+//  About Card class:						//
+//	The card class allows the creation of a single card	//
+// that can be then used by it's subclasses.  A Deck class,	//
+// for example, is a collection of cards that can be shuffled	//
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *	//
 
 // included header files
 #include "Card.h"
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// No-argument accepting Constructor			*
+// No-argument accepting Constructor		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 
 Card::Card()
@@ -27,7 +27,7 @@ Card::Card()
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// Argument accepting Constructor				*
+// Argument accepting Constructor		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 Card::Card(char s, char r)
 {
@@ -37,7 +37,7 @@ Card::Card(char s, char r)
 
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setSuit sets the suit of a card object		*
+// setSuit sets the suit of a card object	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 
 void Card::setSuit(char s)
@@ -46,7 +46,7 @@ void Card::setSuit(char s)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setRank sets the rank of a card object		*
+// setRank sets the rank of a card object	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 
 void Card::setRank(char r)
