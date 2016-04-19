@@ -1,15 +1,15 @@
 //* * * * * * * * * * * * * * * * * * * * * * * //
-//  Author:		Paul Schwappach					//
-//	Professor:	George Sfakianakis				//
-//	Class:		CSIS 297 - Intermediate C++		//
-//	Assignment:	Semester Project				//
-//	Date:		03/11/2016						//
+//  Author:	Paul Schwappach			//
+//  Professor:	George Sfakianakis		//
+//  Class:	CSIS 297 - Intermediate C++	//
+//  Assignment:	Semester Project		//
+//  Date:	03/11/2016			//
 //* * * * * * * * * * * * * * * * * * * * * * * //
 
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *	//
-//	About User class											//
-//		This class inherits from the Player class and allows	//
-//	specific actions for a user to interface with 				//
+// About User class						//
+//	This class inherits from the Player class and allows	//
+//	specific actions for a user to interface with 		//
 //* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *	//
 
 // included header files
@@ -19,7 +19,7 @@
 #include "User.h"
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// No-Argument Constructor						*
+// No-Argument Constructor			*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 User::User()
 {
@@ -30,7 +30,7 @@ User::User()
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// Argument Constructor							*
+// Argument Constructor				*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 User::User(std::string name)
 {
@@ -39,7 +39,7 @@ User::User(std::string name)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setName() sets userName						*
+// setName() sets userName			*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::setName(std::string name)
 {
@@ -47,7 +47,7 @@ void User::setName(std::string name)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setBet() sets bet amount for user			*
+// setBet() sets bet amount for user		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::setBet(double amount)
 {
@@ -59,7 +59,7 @@ void User::setBet(double amount)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setBet2() sets split bet amount for user		*
+// setBet2() sets split bet amount for user	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::setBet2(double amount)
 {
@@ -71,7 +71,7 @@ void User::setBet2(double amount)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// getMoney() adds win amount to userMoney		*
+// getMoney() adds win amount to userMoney	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::addMoney(double winnings)
 {
@@ -79,7 +79,7 @@ void User::addMoney(double winnings)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setInsurance() set's user insurance bet		*
+// setInsurance() set's user insurance bet	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::setInsurance(double amount)
 {
@@ -88,7 +88,7 @@ void User::setInsurance(double amount)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setInsurance() set's user insurance bet		*
+// setInsurance() set's user insurance bet	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::resetHand()
 {
@@ -104,8 +104,8 @@ void User::resetHand()
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// setUserWantsToQuit() user wants to stop		*
-// running theprogram							*
+// setUserWantsToQuit() user wants to stop	*
+// running theprogram				*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::setUserWantsToQuit(bool selection)
 {
@@ -114,7 +114,7 @@ void User::setUserWantsToQuit(bool selection)
 
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// getName() returns user's name				*
+// getName() returns user's name		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 std::string User::getName() const
 {
@@ -122,7 +122,7 @@ std::string User::getName() const
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// getBet() returns user's bet amount			*
+// getBet() returns user's bet amount		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 double User::getBet() const
 {
@@ -138,7 +138,7 @@ double User::getBet2() const
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// getMoney() displays amount of userMoney		*
+// getMoney() displays amount of userMoney	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 double User::getMoney() const
 {
@@ -146,7 +146,7 @@ double User::getMoney() const
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// getInsurance() set's user insurance bet		*
+// getInsurance() set's user insurance bet	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 double User::getInsurance() const
 {
@@ -155,7 +155,7 @@ double User::getInsurance() const
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
 // getUserWantsToQuit() returns if the user  	*
-// wants to stop running the program			*
+// wants to stop running the program		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 bool User::getUserWantsToQuit() const
 {
@@ -163,7 +163,7 @@ bool User::getUserWantsToQuit() const
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// getHasDoubled() has user doubled	(main)		*
+// getHasDoubled() has user doubled	(main)	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 bool User::getHasDoubled() const
 {
@@ -180,7 +180,7 @@ bool User::getHasDoubledSplit() const
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
 // canDoubleDown() checks the hand to see if	*
-//	it can double down (same with split hand)	*
+// it can double down (same with split hand)	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 bool User::canDoubleDown(int handNum) const
 {
@@ -206,8 +206,8 @@ bool User::canDoubleDown(int handNum) const
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// doubleDown() adds a card to userHand	and		*
-//	doubles bet	(same with split hand)			*
+// doubleDown() adds a card to userHand	and	*
+// doubles bet (same with split hand)		*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 void User::doubleDown(BlackJackDeck &deck, bool hasSplit)
 {
@@ -266,7 +266,7 @@ std::string User::showHand() const
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
 // showSplitHand() returns the user split hand	*
-// as a string									*
+// as a string					*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 std::string User::showSplitHand() const
 {
@@ -278,8 +278,8 @@ std::string User::showSplitHand() const
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// overload << to show user name and their 		*
-// amount of money								*
+// overload << to show user name and their 	*
+// amount of money				*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 std::ostream &operator << (std::ostream &strm, const User &user)
 {
@@ -293,13 +293,13 @@ std::ostream &operator << (std::ostream &strm, const User &user)
 }
 
 //* * * * * * * * * * * * * * * * * * * * * * * *
-// overload >> operator to input userName		*
+// overload >> operator to input userName	*
 //* * * * * * * * * * * * * * * * * * * * * * * *
 std::istream &operator >> (std::istream &strm, User &user)
 {
 	// prompt for name
 	std::cout << "First, enter your name!" << std::endl;
-	strm >> user.userName;
+	std::getline(strm, user.userName);
 
 	return strm;
 }
